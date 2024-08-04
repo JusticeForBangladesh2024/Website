@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 
 # Manage Jekyll version for consistent builds
-gem "jekyll", "~> 3.10.0"
-gem "kramdown-parser-gfm"
+gem "jekyll", "~> 4.3.3"
+gem "jekyll-sass-converter", "~> 2.2.0"
 
 # Default theme for Jekyll sites, customizable
 gem "minima", github: "jekyll/minima"
