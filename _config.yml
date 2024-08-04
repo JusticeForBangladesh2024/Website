@@ -1,0 +1,19 @@
+title: Justice for Bangladesh 2024
+description: >-
+  মুক্তির মন্দির সোপানতলে, 
+  কত প্রাণ হলো বলিদান, লেখা আছে অশ্রুজলে
+
+author: JusticeForBD2024
+email: JusticeForBD2024@protonmail.com
+
+baseurl: ""
+url: "shohid2024.xyz"
+site_header: Justice for Bangladesh
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-sitemap
+
+exclude:
+  - generated

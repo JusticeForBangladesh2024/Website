@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<header class="header-section">
+    <div class="intro-header no-img">
+        <div class="container-md">
+            <div class="row">
+                <div class="page-heading">
+                    <h1>{{ site.site_header }}</h1>
+                    <p class="page-subheading">{{ site.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="row"><br></div>
+<div class="video-grid">
+    {% for video in site.data.videos %}
+    <a href="{{ video.id }}" class="video-item">
+        <div class="video-thumbnail">
+            <img src="{{ video.thumbnail }}" alt="{{ video.title }}">
+        </div>
+        <div class="video-info">
+            <div class="video-title">{{ video.title }}</div>
+            <div class="video-description">{{ video.description }}</div>
+        </div>
+    </a>
+    {% endfor %}
+</div>

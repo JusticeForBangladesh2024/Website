@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<header class="header-section">
+    <div class="intro-header no-img">
+        <div class="container-md">
+            <div class="row d-flex flex-wrap align-items-center">
+                <div class="page-subheading">
+                    <h1>
+                        {{ page.video.title }}
+                    </h1>
+                    <p class="mb-1">
+                        {{ page.video.description }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+{% for source in page.video.sources %}
+<div class="video-embed">
+    {% if source.isFbWatch %}
+    <iframe src="https://www.facebook.com/plugins/video.php?href={{ source.url }}" width="500" height="280" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    {% endif %}
+
+    {% if source.isYoutube %}
+    <iframe src="https://www.youtube.com/embed/{{ source.url }}" width="500" height="280" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    {% endif %}
+</div>
+{% endfor %}
