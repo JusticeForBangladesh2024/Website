@@ -1,0 +1,19 @@
+# Justice for Bangladesh 2024 Website
+
+### How to build on local
+- Make `local_serve.sh` an executable. E.g. `chmod a+x local_serve.sh`.
+- `./local_serve.sh build`
+- `./local_serve.sh serve`
+- Open `http://localhost:4000` in your browser.
+
+### Contribute
+- Fork it
+- Create your feature branch (git checkout -b my-new-feature)
+- Commit your changes (git commit -am 'Add some feature')
+- Push to the branch (git push origin my-new-feature)
+- Create a new Pull Request
+
+
+### Copyright & License
+
+Licensed under the MIT License, see the link:LICENSE[LICENSE] file for details.
